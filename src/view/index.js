@@ -1,20 +1,19 @@
-import './App.scss';
-import AppRouter from './routes';
+import LeftNav from './Nav';
+import Main from './Main';
+import leftNav from '../data/left-nav';
 
-function App() {
-  const responseGoogle = (response) => {
-    console.log(response);
-  }
+function AgilityPlanner() {
   return (
     <div className="row main">
       <header>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" type="text/css" rel="stylesheet" />
       </header>
       <body>
-      <AppRouter />
+          <leftNav />
+          <Main />
       </body>
     </div>
   );
 }
 
-export default App;
+export default AgilityPlanner;
